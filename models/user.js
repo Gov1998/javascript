@@ -3,7 +3,7 @@ const database = require('../configurations/database_configuration').database;
 const sequelize = require('sequelize');
 
 //entità utente
-const user = database.define('user',{
+const User = database.define('user',{
    id: {
         type: sequelize.INTEGER,
         primaryKey: true,
